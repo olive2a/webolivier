@@ -5,53 +5,119 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #e3f0ff 0%, #b3c6e7 100%);
-    color: #222e3a;
+    background: linear-gradient(135deg, #f5faff 0%, #c7e0f7 100%);
+    color: #1a2a3a;
 }
 
-.container {
-    max-width: 600px;
-    margin: 60px auto;
-    background: rgba(255,255,255,0.85);
+.cv-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.92);
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(50, 80, 150, 0.08);
     padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-header h1 {
-    font-size: 2.4rem;
-    margin-bottom: 0.2em;
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    border-bottom: 1.5px solid #e0eaf5;
+    padding-bottom: 24px;
+}
+
+.profile-photo {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #e3f0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(50, 80, 150, 0.08);
+}
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-size: 2.2rem;
+    margin: 0 0 0.2em 0;
     color: #1a3a6b;
     letter-spacing: 1px;
 }
-
-header h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #3b5b8c;
-    margin: 0 0 0.5em 0;
+.profile-info .contact {
+    font-size: 1.05rem;
+    margin: 0.5em 0 1em 0;
+}
+.profile-info a {
+    color: #2d466b;
+    text-decoration: none;
+}
+.profile-info a:hover {
+    text-decoration: underline;
 }
 
-header h3 {
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: #5c7fa3;
-    margin: 0 0 1.5em 0;
+.cv-sections {
+    display: flex;
+    gap: 40px;
 }
-
-.trayectoria p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 1.2em;
+.cv-left {
+    flex: 1 1 260px;
+    max-width: 260px;
 }
-
-.trayectoria ul {
+.cv-right {
+    flex: 2 1 0;
+}
+.cv-block {
+    margin-bottom: 32px;
+}
+.cv-block h2 {
+    font-size: 1.2rem;
+    color: #1a3a6b;
+    margin-bottom: 0.7em;
+    border-left: 4px solid #b3c6e7;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.cv-block ul {
     padding-left: 1.2em;
     margin: 0;
+    list-style: disc inside;
 }
-
-.trayectoria li {
-    margin-bottom: 0.7em;
+.cv-block li {
+    margin-bottom: 0.5em;
     font-size: 1rem;
     color: #2d466b;
+}
+.job {
+    margin-bottom: 1.5em;
+}
+.job h3 {
+    font-size: 1.08rem;
+    margin: 0 0 0.2em 0;
+    color: #234a7c;
+    font-weight: 500;
+}
+.job-date {
+    font-size: 0.98rem;
+    color: #6a8bbd;
+    margin-bottom: 0.5em;
+    display: block;
+}
+@media (max-width: 900px) {
+    .cv-sections {
+        flex-direction: column;
+        gap: 0;
+    }
+    .cv-left, .cv-right {
+        max-width: 100%;
+    }
 }
