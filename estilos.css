@@ -1,0 +1,57 @@
+/* estilos.css - Diseño minimalista y moderno con fondo azul pastel */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f0ff 0%, #b3c6e7 100%);
+    color: #222e3a;
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(50, 80, 150, 0.08);
+    padding: 40px 32px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.2em;
+    color: #1a3a6b;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #3b5b8c;
+    margin: 0 0 0.5em 0;
+}
+
+header h3 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #5c7fa3;
+    margin: 0 0 1.5em 0;
+}
+
+.trayectoria p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2em;
+}
+
+.trayectoria ul {
+    padding-left: 1.2em;
+    margin: 0;
+}
+
+.trayectoria li {
+    margin-bottom: 0.7em;
+    font-size: 1rem;
+    color: #2d466b;
+}
