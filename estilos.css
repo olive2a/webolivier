@@ -1,3 +1,8 @@
+.job-separator {
+    border: none;
+    border-top: 2.5px solid #1a3a6b;
+    margin: 24px 0 24px 0;
+}
 /* estilos.css - Diseño minimalista y moderno con fondo azul pastel */
 
 body {
